@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holy Info — Holy Moly Fest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Inicio</a></li>
+    <li><a class="nav__link" href="tienda.html">Tienda</a></li>
+    <li><a class="nav__link" href="galeria.html">Galería</a></li>
+    <li><a class="nav__link" href="tickets.html">Tickets</a></li>
+  </ul>
+  <a class="nav__logo" href="index.html">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ff2bd6"/><circle cx="22" cy="28" r="5" fill="#ffd83d"/><circle cx="42" cy="28" r="5" fill="#ffd83d"/><circle cx="32" cy="18" r="5" fill="#ffd83d"/></svg>
+    HOLY MOLY
+  </a>
+  <ul class="nav__list nav__list--right">
+    <li><a class="nav__link" href="aftermovie.html">After Movie</a></li>
+    <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+    <li><a class="nav__link is-active" href="holy-info.html">Holy Info</a></li>
+    <li><button class="nav__cart" data-cart-open>🛒 <span class="nav__cart-count">0</span></button></li>
+  </ul>
+  <button class="nav__burger" onclick="document.querySelector('.drawer').classList.add('is-open')"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="drawer"><button class="drawer__close">✕</button><ul>
+  <li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li>
+  <li><a href="tickets.html">Tickets</a></li><li><a href="aftermovie.html">After Movie</a></li>
+  <li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li>
+</ul></div>
+
+<section class="page-title">
+  <p class="eyebrow reveal">Todo lo que necesitas saber</p>
+  <h1 class="reveal delay-1">Holy Info</h1>
+  <div class="divider"></div>
+  <p class="reveal delay-2">La guía completa del festival: fechas, horarios, recinto, reglas, accesibilidad. Si algo no está aquí, escríbenos.</p>
+</section>
+
+<!-- Overview -->
+<section class="panel">
+  <div class="info-grid">
+    <div class="info-row reveal">
+      <div><h3>Fecha y hora</h3></div>
+      <div>
+        <p><b>Sábado 11 de Mayo, 2024.</b> Apertura de puertas 16:00. Cierre 02:00. Last call 01:30.</p>
+        <p>Si vienes de fuera de la ciudad, reserva hotel cerca del Alameda Central. Frontón México queda a 10 min caminando del metro Hidalgo.</p>
+      </div>
+    </div>
+    <div class="info-row reveal delay-1">
+      <div><h3>Recinto</h3></div>
+      <div>
+        <p><b>Frontón México</b> — Plaza de la República 17, Tabacalera, Cuauhtémoc, 06030 CDMX. Aforo: 4,500. Construido en 1929. Techos de 18 metros, acústica brutal.</p>
+        <p>Tres escenarios: Main (Latin Tech), Bodega (Deep / Melodic), Altar (DJ sets íntimos).</p>
+      </div>
+    </div>
+    <div class="info-row reveal delay-2">
+      <div><h3>Edad mínima</h3></div>
+      <div>
+        <p><b>18 años.</b> Trae identificación oficial (INE, pasaporte, cédula). Sin ID no entras, sin excepciones. No se vale la foto.</p>
+      </div>
+    </div>
+    <div class="info-row reveal delay-3">
+      <div><h3>Qué puedes traer</h3></div>
+      <div>
+        <p>✓ Identificación · ✓ Celular · ✓ Dinero o tarjeta · ✓ Tapones auditivos · ✓ Buena actitud</p>
+        <p style="margin-top:.8rem; color:var(--ink-soft);">✗ Mochilas grandes · ✗ Cámaras profesionales (sin acreditación) · ✗ Vidrio · ✗ Bebidas · ✗ Sustancias · ✗ Drama</p>
+      </div>
+    </div>
+    <div class="info-row reveal">
+      <div><h3>Accesibilidad</h3></div>
+      <div>
+        <p>Rampa de acceso, zona elevada reservada y baños adaptados. Si necesitas asistencia específica, escríbenos con 48h de anticipación a <b>acceso@moly.com</b> y coordinamos.</p>
+      </div>
+    </div>
+    <div class="info-row reveal delay-1">
+      <div><h3>Cashless</h3></div>
+      <div>
+        <p>El fest es 100% cashless. Al entrar te activamos una pulsera NFC vinculada a tu tarjeta. Barras, food trucks y merch todo con tap. Sin filas, sin cambio, sin drama.</p>
+      </div>
+    </div>
+    <div class="info-row reveal delay-2">
+      <div><h3>Transporte</h3></div>
+      <div>
+        <p><b>Metro:</b> Hidalgo (L2/L3) · <b>Metrobús:</b> L4 Hidalgo · <b>Uber / Didi:</b> punto de ascenso y descenso sobre Avenida Juárez.</p>
+        <p>Estacionamiento propio $80 MXN. Cupo limitado, llega temprano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="panel bg-warm">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Preguntas frecuentes</p>
+    <h2 class="center reveal delay-1" style="margin-bottom:3rem;">FAQ</h2>
+    <div class="faq">
+      <div class="faq__item reveal"><button class="faq__q">¿Puedo revender mi boleto?</button><div class="faq__a">No oficialmente. Pero si tienes un imprevisto, escríbenos y te ayudamos a transferirlo a un amigo tuyo. La reventa en reventón no la garantizamos.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Hay área de descanso?</button><div class="faq__a">Sí. Zona de sofás, agua gratis, carga de celular y un food court dentro del recinto. También hay un "chill room" con luz tenue y aire fresco.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Se permite entrar y salir?</button><div class="faq__a">No, la reentrada no está permitida. Una vez adentro, te quedas. Prepará tu mochila ligera antes de entrar.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Llueve? ¿El evento se cancela?</button><div class="faq__a">Todo es bajo techo. Llueva, truene o tiemble, el fest continúa. En caso de contingencia mayor, te avisamos por correo y redes.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Puedo pagar con dólares?</button><div class="faq__a">Solo MXN. Los ATMs están a 3 min caminando. Recomendamos precargar tu pulsera cashless desde la app.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Se puede tomar fotos?</button><div class="faq__a">Con tu celu, obvio. Cámaras DSLR / mirrorless solo con acreditación de prensa. El flash apagado, no seas esa persona.</div></div>
+      <div class="faq__item reveal"><button class="faq__q">¿Habrá comida vegana?</button><div class="faq__a">Sí. Hay 4 food trucks con opciones veganas, sin gluten y sin lácteos. También hay corner de frutas y snacks saludables.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Code of conduct -->
+<section class="panel bg-pink">
+  <div class="wrap center">
+    <p class="eyebrow" style="color:rgba(255,255,255,.8);">Código de la casa</p>
+    <h2 style="color:#fff; margin:1rem 0 2rem;">Holy Code</h2>
+    <div style="max-width:60ch; margin:0 auto; color:#fff; font-size:1.1rem; line-height:1.8;">
+      <p>No hay mesh pit tóxico, no hay lenguaje de odio, no hay acoso. Holy Moly es para bailar, no para jalar. Si alguien te incomoda, acércate con cualquier staff de camiseta pink — estamos ahí para ti. Respeto es el único dress code que cuenta.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><div class="footer__logo">HOLY MOLY</div><p class="footer__legal">Holy Moly 2024 · All Rights Reserved</p></div>
+    <div><h4>Secciones</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li><li><a href="tickets.html">Tickets</a></li></ul></div>
+    <div><h4>&nbsp;</h4><ul><li><a href="aftermovie.html">After Movie</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Términos y condiciones</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="mailto:holy@moly.com">holy@moly.com</a></li><li><a href="tel:5642732731">56 4273 2731</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="cart-backdrop"></div>
+<aside class="cart">
+  <div class="cart__head"><h3>Tu carrito</h3><button class="cart__close">✕</button></div>
+  <div class="cart__body"></div>
+  <div class="cart__foot"><div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-family:var(--ff-display); font-size:1.2rem;"><span>Total</span><span class="cart__total">$0 MXN</span></div><button class="btn btn--dark" style="width:100%; justify-content:center;" onclick="alert('Aquí se conecta el Shopify Buy Button / checkout de Guido.')">Checkout con Shopify →</button></div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

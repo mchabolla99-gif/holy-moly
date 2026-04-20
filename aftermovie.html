@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>After Movie — Holy Moly Fest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="drawer"><button class="drawer__close">✕</button><ul>
+  <li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li>
+  <li><a href="tickets.html">Tickets</a></li><li><a href="aftermovie.html">After Movie</a></li>
+  <li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li>
+</ul></div>
+
+<header class="hero" style="min-height:70vh;">
+  <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1800&q=80');"></div>
+  <!-- mascot with popcorn laying on cinema seat -->
+  <svg class="hero__mascot" style="width:min(340px, 40vw); right:8%; bottom:8%; top:auto;" viewBox="0 0 400 250">
+    <path d="M40 80 Q30 140 100 130 Q180 180 260 140 Q340 150 360 100 Q355 60 300 70 Q220 40 140 70 Q70 55 40 80 Z" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="5"/>
+    <path d="M10 60 L30 40 L20 55 L35 30" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <path d="M50 100 L70 80 L60 95 L75 70" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <!-- popcorn holder -->
+    <rect x="300" y="50" width="60" height="90" fill="#fff" stroke="#0c0c0c" stroke-width="4"/>
+    <rect x="300" y="50" width="60" height="90" fill="url(#stripes)" opacity=".9"/>
+    <defs><pattern id="stripes" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="10" height="20" fill="#ff2bd6"/></pattern></defs>
+    <circle cx="310" cy="48" r="8" fill="#ffd83d" stroke="#0c0c0c" stroke-width="2"/>
+    <circle cx="325" cy="40" r="9" fill="#ffd83d" stroke="#0c0c0c" stroke-width="2"/>
+    <circle cx="342" cy="45" r="8" fill="#ffd83d" stroke="#0c0c0c" stroke-width="2"/>
+    <circle cx="355" cy="40" r="7" fill="#ffd83d" stroke="#0c0c0c" stroke-width="2"/>
+    <!-- legs laying -->
+    <path d="M40 130 Q10 150 30 180" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M60 140 Q30 170 50 200" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </svg>
+</header>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Inicio</a></li>
+    <li><a class="nav__link" href="tienda.html">Tienda</a></li>
+    <li><a class="nav__link" href="galeria.html">Galería</a></li>
+    <li><a class="nav__link" href="tickets.html">Tickets</a></li>
+  </ul>
+  <a class="nav__logo" href="index.html">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ff2bd6"/><circle cx="22" cy="28" r="5" fill="#ffd83d"/><circle cx="42" cy="28" r="5" fill="#ffd83d"/><circle cx="32" cy="18" r="5" fill="#ffd83d"/></svg>
+    HOLY MOLY
+  </a>
+  <ul class="nav__list nav__list--right">
+    <li><a class="nav__link is-active" href="aftermovie.html">After Movie</a></li>
+    <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+    <li><a class="nav__link" href="holy-info.html">Holy Info</a></li>
+    <li><button class="nav__cart" data-cart-open>🛒 <span class="nav__cart-count">0</span></button></li>
+  </ul>
+  <button class="nav__burger" onclick="document.querySelector('.drawer').classList.add('is-open')"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-title">
+  <p class="eyebrow reveal">Volumen I · 2023</p>
+  <h1 class="reveal delay-1">After Movie</h1>
+  <div class="divider"></div>
+  <p class="reveal delay-2">Revive la magia, la emoción y la euforia del Holy Moly Fest. Cuatro minutos que capturan los destellos de luces, las explosiones de color y los latidos que resonaron esa noche en el Frontón. Prepárate para una dosis extra de adrenalina.</p>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="video-frame reveal">
+    <div class="video-frame__stars"></div>
+    <button class="video-frame__play" aria-label="Play" onclick="alert('Aquí va el embed de Vimeo / YouTube del after movie oficial.')"></button>
+    <div style="position:absolute; bottom:1.5rem; left:1.5rem; color:#fff; font-family:var(--ff-mono); font-size:.85rem; letter-spacing:.1em;">04:12 · DIR. MIGUEL SOTO · 2023</div>
+  </div>
+</section>
+
+<section class="panel bg-warm">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1.5rem; max-width:1100px; margin:0 auto;">
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--pink);">Vistas</p>
+        <p class="display" style="font-size:clamp(3rem,6vw,5rem);">180k</p>
+      </div>
+      <div class="reveal delay-1">
+        <p class="eyebrow" style="color:var(--pink);">Artistas</p>
+        <p class="display" style="font-size:clamp(3rem,6vw,5rem);">14</p>
+      </div>
+      <div class="reveal delay-2">
+        <p class="eyebrow" style="color:var(--pink);">Asistentes</p>
+        <p class="display" style="font-size:clamp(3rem,6vw,5rem);">4,200</p>
+      </div>
+      <div class="reveal delay-3">
+        <p class="eyebrow" style="color:var(--pink);">Ciudades</p>
+        <p class="display" style="font-size:clamp(3rem,6vw,5rem);">9</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel center">
+  <h2 class="reveal" style="max-width:20ch; margin:0 auto;">¿Y ahora qué sigue?</h2>
+  <p class="lede reveal delay-1" style="margin-top:1.5rem;">Vol. II está al aire. Mismo lugar, nuevo line-up, doble la producción. Nos vemos el 11 de Mayo.</p>
+  <div class="reveal delay-2" style="margin-top:2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <a href="tickets.html" class="btn btn--pink">Comprar ticket Vol. II →</a>
+    <a href="galeria.html" class="btn">Ver galería 2023</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><div class="footer__logo">HOLY MOLY</div><p class="footer__legal">Holy Moly 2024 · All Rights Reserved</p></div>
+    <div><h4>Secciones</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li><li><a href="tickets.html">Tickets</a></li></ul></div>
+    <div><h4>&nbsp;</h4><ul><li><a href="aftermovie.html">After Movie</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Términos y condiciones</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="mailto:holy@moly.com">holy@moly.com</a></li><li><a href="tel:5642732731">56 4273 2731</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="cart-backdrop"></div>
+<aside class="cart">
+  <div class="cart__head"><h3>Tu carrito</h3><button class="cart__close">✕</button></div>
+  <div class="cart__body"></div>
+  <div class="cart__foot"><div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-family:var(--ff-display); font-size:1.2rem;"><span>Total</span><span class="cart__total">$0 MXN</span></div><button class="btn btn--dark" style="width:100%; justify-content:center;" onclick="alert('Aquí se conecta el Shopify Buy Button / checkout de Guido.')">Checkout con Shopify →</button></div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

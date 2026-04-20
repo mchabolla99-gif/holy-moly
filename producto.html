@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holy tee — Holy Moly Fest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Inicio</a></li>
+    <li><a class="nav__link is-active" href="tienda.html">Tienda</a></li>
+    <li><a class="nav__link" href="galeria.html">Galería</a></li>
+    <li><a class="nav__link" href="tickets.html">Tickets</a></li>
+  </ul>
+  <a class="nav__logo" href="index.html">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ff2bd6"/><circle cx="22" cy="28" r="5" fill="#ffd83d"/><circle cx="42" cy="28" r="5" fill="#ffd83d"/><circle cx="32" cy="18" r="5" fill="#ffd83d"/></svg>
+    HOLY MOLY
+  </a>
+  <ul class="nav__list nav__list--right">
+    <li><a class="nav__link" href="aftermovie.html">After Movie</a></li>
+    <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+    <li><a class="nav__link" href="holy-info.html">Holy Info</a></li>
+    <li><button class="nav__cart" data-cart-open>🛒 <span class="nav__cart-count">0</span></button></li>
+  </ul>
+  <button class="nav__burger" onclick="document.querySelector('.drawer').classList.add('is-open')"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="drawer"><button class="drawer__close">✕</button><ul>
+  <li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li>
+  <li><a href="tickets.html">Tickets</a></li><li><a href="aftermovie.html">After Movie</a></li>
+  <li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li>
+</ul></div>
+
+<div style="padding:1rem clamp(1rem,3vw,2rem); font-family:var(--ff-mono); font-size:.8rem; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-soft);">
+  <a href="tienda.html">← Tienda</a> / Holy tee
+</div>
+
+<section class="pdp">
+  <div class="pdp__thumbs">
+    <div class="pdp__thumb is-active">
+      <svg viewBox="0 0 100 100"><path d="M25 20 L50 15 L75 20 L88 35 L82 48 L70 44 L70 85 L30 85 L30 44 L18 48 L12 35 Z" fill="#fff" stroke="#0c0c0c" stroke-width="2"/></svg>
+    </div>
+    <div class="pdp__thumb">
+      <svg viewBox="0 0 100 100"><path d="M25 20 L50 15 L75 20 L88 35 L82 48 L70 44 L70 85 L30 85 L30 44 L18 48 L12 35 Z" fill="#ffd83d" stroke="#0c0c0c" stroke-width="2"/></svg>
+    </div>
+    <div class="pdp__thumb">
+      <svg viewBox="0 0 100 100"><path d="M25 20 L50 15 L75 20 L88 35 L82 48 L70 44 L70 85 L30 85 L30 44 L18 48 L12 35 Z" fill="#0c0c0c" stroke="#0c0c0c" stroke-width="2"/></svg>
+    </div>
+  </div>
+
+  <div class="pdp__main reveal">
+    <svg viewBox="0 0 200 240">
+      <path d="M50 30 L100 20 L150 30 L175 55 L160 80 L140 70 L140 200 L60 200 L60 70 L40 80 L25 55 Z" fill="#fff" stroke="#0c0c0c" stroke-width="3"/>
+      <text x="100" y="115" font-family="Bagel Fat One" font-size="11" fill="#2be4ff" text-anchor="middle" font-style="italic">Humanless Co</text>
+      <rect x="112" y="190" width="20" height="10" fill="#9bff5f" stroke="#0c0c0c" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div class="pdp__info reveal delay-1">
+    <span class="badge">Lote 2/120</span>
+    <h1 style="margin-top:1rem;">Holy tee</h1>
+    <p style="color:var(--ink-soft); max-width:46ch;">Esta playera te hará recordar un increíble momento en el Holy Fest. Úsala para comer, correr, caminar, salir de fiesta, en navidad, en pascua, en tu casa o en la mía.</p>
+    <div class="pdp__price">$700 MXN</div>
+    <p class="eyebrow" style="margin-top:1.5rem;">Talla</p>
+    <div class="pdp__sizes">
+      <button class="pdp__size is-active">S – M</button>
+      <button class="pdp__size">M – L</button>
+      <button class="pdp__size">L – XL</button>
+    </div>
+    <p class="pdp__meta">100% algodón 350gr · serigrafía puff · hecho en CDMX</p>
+    <div class="pdp__actions">
+      <button class="btn" data-add-to-cart data-name="Holy tee" data-price="700">Agregar al carrito</button>
+      <button class="btn btn--dark" data-add-to-cart data-name="Holy tee" data-price="700" onclick="setTimeout(()=>alert('Aquí se conecta el checkout directo de Shopify.'),300)">Comprar ahora</button>
+    </div>
+  </div>
+</section>
+
+<section class="panel bg-warm">
+  <div class="wrap">
+    <h2 class="center reveal" style="margin-bottom:3rem;">Productos similares, no iguales</h2>
+    <div class="prod-grid">
+      <a href="producto.html" class="prod reveal"><div class="prod__img"><svg viewBox="0 0 200 240"><path d="M50 30 L100 10 L150 30 L180 60 L170 90 L150 80 L150 210 L50 210 L50 80 L30 90 L20 60 Z" fill="#3a1e2e" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="120" font-family="Bagel Fat One" font-size="14" fill="#ff2bd6" text-anchor="middle">Humanless Co</text></svg></div><div class="prod__title">Holy hoodie</div><div class="prod__price">$700 MXN</div></a>
+      <a href="producto.html" class="prod reveal delay-1"><div class="prod__img"><svg viewBox="0 0 200 240"><path d="M50 30 L100 20 L150 30 L175 55 L160 80 L140 70 L140 200 L60 200 L60 70 L40 80 L25 55 Z" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="115" font-family="Bagel Fat One" font-size="11" fill="#ff2bd6" text-anchor="middle">Humanless Co</text></svg></div><div class="prod__title">Holy tee (yellow)</div><div class="prod__price">$700 MXN</div></a>
+      <a href="producto.html" class="prod reveal delay-2"><div class="prod__img"><svg viewBox="0 0 200 240"><ellipse cx="100" cy="140" rx="80" ry="60" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><path d="M40 140 Q100 60 160 140" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="145" font-family="Bagel Fat One" font-size="18" fill="#0c0c0c" text-anchor="middle">HOLY</text></svg></div><div class="prod__title">Holy cap</div><div class="prod__price">$450 MXN</div></a>
+      <a href="producto.html" class="prod reveal delay-3"><div class="prod__img"><svg viewBox="0 0 200 240"><rect x="40" y="50" width="120" height="150" fill="#9bff5f" stroke="#0c0c0c" stroke-width="3"/><circle cx="100" cy="125" r="35" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="130" font-family="Bagel Fat One" font-size="12" fill="#fff" text-anchor="middle">HOLY</text></svg></div><div class="prod__title">Holy tote</div><div class="prod__price">$350 MXN</div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><div class="footer__logo">HOLY MOLY</div><p class="footer__legal">Holy Moly 2024 · All Rights Reserved</p></div>
+    <div><h4>Secciones</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li><li><a href="tickets.html">Tickets</a></li></ul></div>
+    <div><h4>&nbsp;</h4><ul><li><a href="aftermovie.html">After Movie</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Términos y condiciones</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="mailto:holy@moly.com">holy@moly.com</a></li><li><a href="tel:5642732731">56 4273 2731</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="cart-backdrop"></div>
+<aside class="cart">
+  <div class="cart__head"><h3>Tu carrito</h3><button class="cart__close">✕</button></div>
+  <div class="cart__body"></div>
+  <div class="cart__foot">
+    <div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-family:var(--ff-display); font-size:1.2rem;"><span>Total</span><span class="cart__total">$0 MXN</span></div>
+    <button class="btn btn--dark" style="width:100%; justify-content:center;" onclick="alert('Aquí se conecta el Shopify Buy Button / checkout de Guido.')">Checkout con Shopify →</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

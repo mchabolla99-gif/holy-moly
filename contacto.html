@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — Holy Moly Fest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="drawer"><button class="drawer__close">✕</button><ul>
+  <li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li>
+  <li><a href="tickets.html">Tickets</a></li><li><a href="aftermovie.html">After Movie</a></li>
+  <li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li>
+</ul></div>
+
+<header class="hero" style="min-height:55vh;">
+  <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1800&q=80');"></div>
+  <svg class="hero__mascot" style="width:min(280px, 32vw); right:30%; top:35%;" viewBox="0 0 400 320">
+    <!-- body lying on desk -->
+    <path d="M60 140 Q40 90 80 70 Q90 30 140 40 Q160 15 190 35 Q235 30 250 70 Q295 75 280 130 Q305 165 265 200 Q260 235 210 240 Q165 255 140 240 Q95 250 80 215 Q40 185 60 140 Z" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="5"/>
+    <!-- money stacks -->
+    <rect x="300" y="200" width="60" height="25" fill="#9bff5f" stroke="#0c0c0c" stroke-width="3"/>
+    <rect x="305" y="195" width="55" height="15" fill="#9bff5f" stroke="#0c0c0c" stroke-width="3"/>
+    <text x="330" y="217" font-family="Bagel Fat One" font-size="10" fill="#0c0c0c" text-anchor="middle">$$</text>
+    <path d="M270 150 L300 200" stroke="#c41b9f" stroke-width="10" stroke-linecap="round"/>
+    <!-- eyes -->
+    <circle cx="125" cy="130" r="20" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="195" cy="130" r="20" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="160" cy="85" r="18" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="128" cy="133" r="7" fill="#0c0c0c"/><circle cx="198" cy="133" r="7" fill="#0c0c0c"/><circle cx="162" cy="88" r="7" fill="#0c0c0c"/>
+    <path d="M130 180 Q160 215 190 180 Q175 200 160 200 Q145 200 130 180 Z" fill="#0c0c0c"/>
+    <rect x="145" y="187" width="8" height="10" fill="#fff"/><rect x="168" y="187" width="8" height="10" fill="#fff"/>
+    <path d="M50 100 L70 80 L60 95 L75 70" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <path d="M280 90 L300 70 L290 85 L305 60" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <!-- legs -->
+    <path d="M150 260 Q140 300 155 315" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M180 260 Q190 300 175 315" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </svg>
+</header>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Inicio</a></li>
+    <li><a class="nav__link" href="tienda.html">Tienda</a></li>
+    <li><a class="nav__link" href="galeria.html">Galería</a></li>
+    <li><a class="nav__link" href="tickets.html">Tickets</a></li>
+  </ul>
+  <a class="nav__logo" href="index.html">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ff2bd6"/><circle cx="22" cy="28" r="5" fill="#ffd83d"/><circle cx="42" cy="28" r="5" fill="#ffd83d"/><circle cx="32" cy="18" r="5" fill="#ffd83d"/></svg>
+    HOLY MOLY
+  </a>
+  <ul class="nav__list nav__list--right">
+    <li><a class="nav__link" href="aftermovie.html">After Movie</a></li>
+    <li><a class="nav__link is-active" href="contacto.html">Contacto</a></li>
+    <li><a class="nav__link" href="holy-info.html">Holy Info</a></li>
+    <li><button class="nav__cart" data-cart-open>🛒 <span class="nav__cart-count">0</span></button></li>
+  </ul>
+  <button class="nav__burger" onclick="document.querySelector('.drawer').classList.add('is-open')"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-title">
+  <h1 class="reveal">Contacto</h1>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <!-- Público -->
+  <div class="contact-block reveal">
+    <h2>Público</h2>
+    <div class="divider"></div>
+    <p>¿Preguntas sobre tu boleto, el recinto, la hora de apertura, la edad mínima o el dress code? Escríbenos, respondemos en menos de 24h (en serio).</p>
+    <a href="mailto:holy@moly.com" class="btn btn--dark">Envíanos un correo</a>
+  </div>
+
+  <div style="max-width:720px; margin:3rem auto; border-top:2px solid var(--ink);"></div>
+
+  <!-- Colaboraciones -->
+  <div class="contact-block reveal delay-1">
+    <h2>Contacto para colaboraciones</h2>
+    <div class="divider"></div>
+    <p>¿Tu marca quiere unirse al Holy Moly Fest? Activaciones, patrocinios, brand partnerships, booths experienciales. Abierto a propuestas raras, no tanto a las aburridas.</p>
+    <a href="https://wa.me/525642732731" class="btn btn--pink">WhatsApp directo →</a>
+  </div>
+
+  <div style="max-width:720px; margin:3rem auto; border-top:2px solid var(--ink);"></div>
+
+  <!-- Prensa -->
+  <div class="contact-block reveal delay-2">
+    <h2>Prensa</h2>
+    <div class="divider"></div>
+    <p>Kit de prensa, fotos en alta y acreditaciones para medios. Para solicitar acceso a zona VIP de prensa, mándanos la publicación y dos piezas recientes tuyas.</p>
+    <a href="mailto:prensa@moly.com" class="btn">prensa@moly.com</a>
+  </div>
+</section>
+
+<section class="panel bg-pink center">
+  <p class="eyebrow" style="color:rgba(255,255,255,.85);">Síguenos</p>
+  <h2 style="color:#fff; margin:1rem 0 2rem;">@holymolyfest</h2>
+  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <a href="#" class="btn btn--yellow">Instagram</a>
+    <a href="#" class="btn btn--cyan">TikTok</a>
+    <a href="#" class="btn">Spotify</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><div class="footer__logo">HOLY MOLY</div><p class="footer__legal">Holy Moly 2024 · All Rights Reserved</p></div>
+    <div><h4>Secciones</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li><li><a href="tickets.html">Tickets</a></li></ul></div>
+    <div><h4>&nbsp;</h4><ul><li><a href="aftermovie.html">After Movie</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Términos y condiciones</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="mailto:holy@moly.com">holy@moly.com</a></li><li><a href="tel:5642732731">56 4273 2731</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="cart-backdrop"></div>
+<aside class="cart">
+  <div class="cart__head"><h3>Tu carrito</h3><button class="cart__close">✕</button></div>
+  <div class="cart__body"></div>
+  <div class="cart__foot"><div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-family:var(--ff-display); font-size:1.2rem;"><span>Total</span><span class="cart__total">$0 MXN</span></div><button class="btn btn--dark" style="width:100%; justify-content:center;" onclick="alert('Aquí se conecta el Shopify Buy Button / checkout de Guido.')">Checkout con Shopify →</button></div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda — Holy Moly Fest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23ff2bd6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="drawer"><button class="drawer__close">✕</button><ul>
+  <li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li>
+  <li><a href="tickets.html">Tickets</a></li><li><a href="aftermovie.html">After Movie</a></li>
+  <li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li>
+</ul></div>
+
+<!-- HERO -->
+<header class="hero" style="min-height:50vh;">
+  <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1542684239-0bfb11d9c67a?w=1800&q=80');"></div>
+  <svg class="hero__mascot" style="width:min(220px, 28vw); left:50%; top:50%; transform:translate(-50%,-50%);" viewBox="0 0 300 420">
+    <!-- legs (longer — walking) -->
+    <path d="M130 260 Q120 340 135 410" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M170 260 Q180 340 165 410" stroke="#c41b9f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- shirt -->
+    <path d="M100 230 L90 320 L210 320 L200 230 Z" fill="#ffd83d" stroke="#0c0c0c" stroke-width="5"/>
+    <!-- cloud -->
+    <path d="M50 140 Q30 90 70 70 Q80 30 130 40 Q150 15 180 35 Q225 30 240 70 Q285 75 270 130 Q295 165 255 200 Q250 235 200 240 Q155 255 130 240 Q85 250 70 215 Q30 185 50 140 Z" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="5"/>
+    <path d="M40 120 L55 105 L45 115 L60 95" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <path d="M250 105 L265 90 L255 100 L270 80" stroke="#0c0c0c" stroke-width="4" fill="#2be4ff"/>
+    <circle cx="115" cy="135" r="20" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="185" cy="135" r="20" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="150" cy="90" r="18" fill="#ffd83d" stroke="#0c0c0c" stroke-width="4"/>
+    <circle cx="118" cy="138" r="7" fill="#0c0c0c"/><circle cx="188" cy="138" r="7" fill="#0c0c0c"/><circle cx="152" cy="93" r="7" fill="#0c0c0c"/>
+    <path d="M120 180 Q150 215 180 180 Q165 200 150 200 Q135 200 120 180 Z" fill="#0c0c0c"/>
+    <rect x="135" y="187" width="8" height="10" fill="#fff"/><rect x="158" y="187" width="8" height="10" fill="#fff"/>
+    <path d="M150 200 Q155 220 148 235 Q155 228 150 210" fill="#2be4ff" stroke="#0c0c0c" stroke-width="2"/>
+  </svg>
+</header>
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="index.html">Inicio</a></li>
+    <li><a class="nav__link is-active" href="tienda.html">Tienda</a></li>
+    <li><a class="nav__link" href="galeria.html">Galería</a></li>
+    <li><a class="nav__link" href="tickets.html">Tickets</a></li>
+  </ul>
+  <a class="nav__logo" href="index.html">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ff2bd6"/><circle cx="22" cy="28" r="5" fill="#ffd83d"/><circle cx="42" cy="28" r="5" fill="#ffd83d"/><circle cx="32" cy="18" r="5" fill="#ffd83d"/></svg>
+    HOLY MOLY
+  </a>
+  <ul class="nav__list nav__list--right">
+    <li><a class="nav__link" href="aftermovie.html">After Movie</a></li>
+    <li><a class="nav__link" href="contacto.html">Contacto</a></li>
+    <li><a class="nav__link" href="holy-info.html">Holy Info</a></li>
+    <li><button class="nav__cart" data-cart-open>🛒 <span class="nav__cart-count">0</span></button></li>
+  </ul>
+  <button class="nav__burger" onclick="document.querySelector('.drawer').classList.add('is-open')"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-title">
+  <p class="eyebrow reveal">Drop 01 — Humanless Co</p>
+  <h1 class="reveal delay-1">Tienda</h1>
+  <div class="divider"></div>
+  <p class="reveal delay-2">Lleva contigo el espíritu del Holy Moly Fest. Piezas tiradas en lotes chicos, bordadas en CDMX, numeradas a mano. Cuando se acaban, se acaban.</p>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="prod-grid">
+    <a href="producto.html" class="prod reveal">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><path d="M50 30 L100 10 L150 30 L180 60 L170 90 L150 80 L150 210 L50 210 L50 80 L30 90 L20 60 Z" fill="#3a1e2e" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="120" font-family="Bagel Fat One" font-size="14" fill="#ff2bd6" text-anchor="middle">Humanless Co</text></svg>
+      </div>
+      <div class="prod__title">Holy hoodie</div><div class="prod__price">$700 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-1">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><path d="M50 30 L100 20 L150 30 L175 55 L160 80 L140 70 L140 200 L60 200 L60 70 L40 80 L25 55 Z" fill="#fff" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="115" font-family="Bagel Fat One" font-size="11" fill="#2be4ff" text-anchor="middle" font-style="italic">Humanless Co</text></svg>
+      </div>
+      <div class="prod__title">Holy tee</div><div class="prod__price">$700 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-2">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><ellipse cx="100" cy="140" rx="80" ry="60" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><path d="M40 140 Q100 60 160 140" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="145" font-family="Bagel Fat One" font-size="18" fill="#0c0c0c" text-anchor="middle">HOLY</text></svg>
+      </div>
+      <div class="prod__title">Holy cap</div><div class="prod__price">$450 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-3">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><rect x="40" y="50" width="120" height="150" fill="#9bff5f" stroke="#0c0c0c" stroke-width="3"/><circle cx="100" cy="125" r="35" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="130" font-family="Bagel Fat One" font-size="12" fill="#fff" text-anchor="middle">HOLY</text></svg>
+      </div>
+      <div class="prod__title">Holy tote</div><div class="prod__price">$350 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><rect x="55" y="50" width="90" height="160" fill="#2be4ff" stroke="#0c0c0c" stroke-width="3"/><text x="100" y="135" font-family="Bagel Fat One" font-size="28" fill="#0c0c0c" text-anchor="middle">HM</text></svg>
+      </div>
+      <div class="prod__title">Holy poster</div><div class="prod__price">$250 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-1">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><circle cx="100" cy="120" r="75" fill="#7b3dff" stroke="#0c0c0c" stroke-width="3"/><circle cx="100" cy="120" r="20" fill="#0c0c0c"/><text x="100" y="210" font-family="Bagel Fat One" font-size="18" fill="#0c0c0c" text-anchor="middle">HOLY</text></svg>
+      </div>
+      <div class="prod__title">Holy vinyl (Vol.I)</div><div class="prod__price">$900 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-2">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><rect x="60" y="40" width="80" height="180" rx="40" fill="#ff2bd6" stroke="#0c0c0c" stroke-width="3"/><rect x="75" y="55" width="50" height="70" fill="#fff" stroke="#0c0c0c" stroke-width="2"/><circle cx="100" cy="170" r="18" fill="#fff" stroke="#0c0c0c" stroke-width="2"/></svg>
+      </div>
+      <div class="prod__title">Holy bottle</div><div class="prod__price">$380 MXN</div>
+    </a>
+    <a href="producto.html" class="prod reveal delay-3">
+      <div class="prod__img">
+        <svg viewBox="0 0 200 240"><circle cx="100" cy="120" r="60" fill="#ffd83d" stroke="#0c0c0c" stroke-width="3"/><circle cx="80" cy="110" r="8" fill="#0c0c0c"/><circle cx="120" cy="110" r="8" fill="#0c0c0c"/><path d="M75 140 Q100 160 125 140" stroke="#0c0c0c" stroke-width="4" fill="none"/></svg>
+      </div>
+      <div class="prod__title">Holy sticker pack</div><div class="prod__price">$120 MXN</div>
+    </a>
+  </div>
+</section>
+
+<section class="panel bg-pink center">
+  <p class="eyebrow" style="color:#fff;">Pago seguro</p>
+  <h2 style="color:#fff; margin-top:1rem;">Checkout con Shopify</h2>
+  <p class="lede" style="color:rgba(255,255,255,.85); margin-top:1rem;">Cada pieza se envía con número de lote, un sticker de la edición y una tarjeta escrita a mano. No es marketing, es culto.</p>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><div class="footer__logo">HOLY MOLY</div><p class="footer__legal">Holy Moly 2024 · All Rights Reserved</p></div>
+    <div><h4>Secciones</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="tienda.html">Tienda</a></li><li><a href="galeria.html">Galería</a></li><li><a href="tickets.html">Tickets</a></li></ul></div>
+    <div><h4>&nbsp;</h4><ul><li><a href="aftermovie.html">After Movie</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="holy-info.html">Holy Info</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="#">Términos y condiciones</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Devoluciones</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="mailto:holy@moly.com">holy@moly.com</a></li><li><a href="tel:5642732731">56 4273 2731</a></li></ul></div>
+  </div>
+</footer>
+
+<div class="cart-backdrop"></div>
+<aside class="cart">
+  <div class="cart__head"><h3>Tu carrito</h3><button class="cart__close">✕</button></div>
+  <div class="cart__body"></div>
+  <div class="cart__foot">
+    <div style="display:flex; justify-content:space-between; margin-bottom:1rem; font-family:var(--ff-display); font-size:1.2rem;"><span>Total</span><span class="cart__total">$0 MXN</span></div>
+    <button class="btn btn--dark" style="width:100%; justify-content:center;" onclick="alert('Aquí se conecta el Shopify Buy Button / checkout de Guido.')">Checkout con Shopify →</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
